@@ -1,0 +1,23 @@
+@mixin text($fontSize: 1.25rem) {
+  font-size: $fontSize;
+  font-weight: 400;
+  color: var(--darkGrey);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .smallText {
+    @include text(1rem);
+  }
+
+  .mediumText {
+    @include text();
+  }
+
+  .largeText {
+    @include text(1.5rem);
+  }
+}

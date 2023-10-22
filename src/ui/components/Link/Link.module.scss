@@ -1,0 +1,23 @@
+.primaryLink {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  margin-left: 0.25rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.secondaryLink {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--primaryPurple);
+  text-align: left;
+  margin-left: 0.25rem;
+  &:hover {
+    cursor: pointer;
+  }
+}

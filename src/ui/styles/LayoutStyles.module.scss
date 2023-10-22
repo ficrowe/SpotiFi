@@ -1,0 +1,42 @@
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  // width: 80%;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  gap: 2.5rem;
+}
+
+.center {
+  align-items: center;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.row {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.spacer {
+  gap: 3rem;
+}
+
+.verticalPadding {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+  align-items: center;
+  margin: auto;
+}

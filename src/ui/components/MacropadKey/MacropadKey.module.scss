@@ -1,0 +1,61 @@
+.container {
+    height: 10rem;
+    width: 10rem;
+
+    z-index: 1;
+}
+
+.backlit {
+    box-shadow: 0rem 0rem 2rem 0rem rgba(11, 218, 81, 0.5);
+
+    border-radius: 0.5rem;
+    z-index: 0;
+
+    margin: 0.15rem;
+
+}
+
+.selected {
+    // box-sizing: border-box;
+    border-radius: 0.5rem;
+    background-color: var(--darkGrey);
+    opacity: 65%;
+
+    height: 9.70rem;
+    width: 9.70rem;
+}
+
+.topLayer {
+    opacity: 100%;
+
+    border-radius: 0.5rem;
+
+    background: linear-gradient(
+        to bottom right,
+        var(--lightGrey),
+        var(--mediumGrey)
+    );
+
+    z-index: 3;
+
+    height: 75%;
+    width: 75%;
+}
+
+.bottomLayer {
+    z-index: 2;
+
+    border-radius: 0.5rem;
+    background: linear-gradient(
+        to bottom right,
+        var(--mediumGrey),
+        var(--darkGrey)
+    );
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}

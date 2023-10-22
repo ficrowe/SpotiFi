@@ -1,0 +1,88 @@
+%button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  border-radius: var(--BORDER_RADIUS);
+  border: 0rem;
+
+  min-width: var(--MIN_BUTTON_WIDTH);
+  min-height: var(--MIN_BUTTON_HEIGHT);
+  max-height: var(--MAX_BUTTON_HEIGHT);
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+%label {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.primaryButton {
+  background-color: var(--primaryButton);
+  // border: var(--BORDER_WIDTH) solid var(--primaryButton);
+
+  @extend %button;
+
+  .primaryLabel {
+    color: white;
+    @extend %label;
+  }
+}
+
+.secondaryButton {
+  background-color: white;
+  // border: var(--BORDER_WIDTH) solid var(--primaryButton);
+
+  @extend %button;
+
+  .secondaryLabel {
+    color: var(--primaryButton);
+    @extend %label;
+  }
+}
+
+.neutralButton {
+  background-color: var(--mediumGrey);
+  // border: var(--BORDER_WIDTH) solid var(--primaryButton);
+
+  @extend %button;
+
+  .neutralLabel {
+    color: var(--primaryWhite);
+    @extend %label;
+  }
+}
+
+.invertedButton {
+  display: flex;
+  background-color: transparent;
+  border: var(--BORDER_WIDTH) solid white;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  min-width: var(--MIN_BUTTON_WIDTH);
+  min-height: var(--MIN_BUTTON_HEIGHT);
+  max-height: var(--MAX_BUTTON_HEIGHT);
+
+  width: 100%;
+
+  .invertedLabel {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: "Poppins", sans-serif;
+  }
+}

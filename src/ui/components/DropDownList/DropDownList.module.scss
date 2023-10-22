@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-width: 25rem;
+
+  user-select: none;
+
+  .label {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--darkGrey);
+  }
+
+  .select {
+    display: flex;
+    border: var(--BORDER_WIDTH) solid var(--darkGrey);
+    border-radius: 1rem;
+    padding: 0.3rem 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 1.5rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--darkGrey);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .placeholder {
+    color: grey;
+  }
+
+  .optionsWrapper {
+    position: absolute;
+    top: 5rem;
+
+    width: 100%;
+    box-sizing: inherit;
+
+    background-color: white;
+    border: var(--BORDER_WIDTH) solid var(--darkGrey);
+    border-radius: 1rem;
+
+    z-index: 1;
+
+    &:focus {
+      border: var(--BORDER_WIDTH) solid var(--green1);
+    }
+  }
+}

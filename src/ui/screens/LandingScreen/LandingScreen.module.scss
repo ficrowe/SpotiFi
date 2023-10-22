@@ -1,0 +1,164 @@
+.container {
+  background: linear-gradient(
+    to top,
+    #262626,
+    #696969
+);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.titleSectionWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.actionsWrapper {
+  width: 100%;
+}
+
+.shortcutWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-right: 15%;
+}
+
+
+.shortcutsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.shortcutBlockWrapper {
+  width: 20rem;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.deviceWrapper {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+
+.title {
+  text-align: start;
+  color: white;
+}
+
+.nameField {
+  min-width: 5rem;
+  max-width: 50%;
+  width: 100%;
+}
+
+.shortcutInputsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.shortcutInputVariablesWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkGrey);
+  border: 1rem solid var(--darkGrey);
+  border-radius: var(--BORDER_RADIUS);
+
+  min-height: 5rem;
+  max-height: 35rem;
+  min-width: 25rem;
+  max-width: 25rem;
+  overflow: scroll;
+
+  div {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0.15rem 1rem;
+    color: var(--primaryWhite);
+
+    &:hover {
+      cursor: pointer;
+      color: var(--green1);
+      font-weight: 600;
+    }
+  }
+
+  .unselected {
+    color: var(--primaryWhite);
+    font-weight: 400;
+  }
+
+  .selected {
+    color: var(--green1);
+    font-weight: 700;
+  }
+}
+
+.inputTypeWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmSelectionsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.loaderWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  min-width: 15rem;
+  max-width: 20rem;
+  width: 100%;
+}
+
+.tagLineWrapper {
+  text-align: left;
+}
+
+.loaderWrapper {
+  width: 20rem;
+  color: var(--green1);
+}

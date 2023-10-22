@@ -1,0 +1,61 @@
+%shortcutText {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+%container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: start;
+
+    padding: 2rem;
+    border-radius: 1rem;
+
+    cursor: pointer;
+
+    @extend %shortcutText;
+}
+
+.selectedContainer {
+    @extend %container;
+
+    color: var(--primaryWhite);
+    background-color: var(--green1);
+}
+
+.unselectedContainer {
+    @extend %container;
+    
+    color: var(--darkGrey);
+    background-color: var(--lightGrey);
+}
+
+.shortcutStaticText {
+    @extend %shortcutText;
+}
+
+%shortcutInputText {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.unselectedShortcutInputText {
+    @extend %shortcutInputText;
+    color: var(--mediumGrey);
+
+    &:hover {
+        color: var(--green1);
+    }
+}
+
+.selectedShortcutInputText {
+    @extend %shortcutInputText;
+    color: var(--darkGrey);
+
+    &:hover {
+        color: var(--mediumGrey);
+    }
+}

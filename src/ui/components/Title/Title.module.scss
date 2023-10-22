@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .title {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--darkGrey);
+    transition: 0.4s;
+  }
+}

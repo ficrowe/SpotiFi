@@ -1,0 +1,61 @@
+.container {
+  // display: flex;
+  // flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.titleSectionWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.actionsWrapper {
+  width: 100%;
+}
+
+.shortcutWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-right: 15%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.title {
+  text-align: start;
+  color: white;
+}
+
+.nameField {
+  min-width: 5rem;
+  max-width: 50%;
+  width: 100%;
+}

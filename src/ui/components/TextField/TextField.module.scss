@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  width: 100%;
+  min-width: 25rem;
+
+  .label {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--darkGrey);
+
+    // :focus {
+    //   color: var(--green1);
+    // }
+  }
+
+  .input {
+    border: var(--BORDER_WIDTH) solid var(--darkGrey);
+    border-radius: 15px;
+    padding: 0.3rem 0.6rem;
+
+    min-height: 1.5rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--darkGrey);
+
+    &:focus-visible {
+      outline: none;
+    }
+    &:focus {
+      border: var(--BORDER_WIDTH) solid var(--green1);
+    }
+  }
+}
+
+.errorMessage {
+  color: red;
+  text-align: left;
+  margin: unset;
+}

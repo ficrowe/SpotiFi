@@ -24,3 +24,7 @@ yarn-error.log*
 
 # IDE files
 .idea
+
+# Firebase files
+.firebaserc
+/src/firebase/config.ts

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "types": ["node"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,8 +14,24 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    // "noImplicitAny": false,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    // "baseUrl": "./",
+    // "paths": {
+      // "*": ["src/types/*"]
+      // "@/*": ["src/*"],
+      // "@screens/*": ["src/ui/screens/*"],
+      // "@components/*": ["src/ui/components/*"],
+      // "@styles/*": ["src/styles/*"],
+      // "@assets/*": ["src/assets/*"],
+      // "@constants/*": ["src/constants/*"],
+      // "@utils/*": ["src/utils/*"],
+      // "@models/*": ["src/models/*"],
+      // "@api/*": ["src/api/*"],
+      // "@myfirebase/*": ["src/firebase/*"],
+      // "@spotify/*": ["src/spotify/*"]
+    // }
   },
-  "include": ["src"]
+  // "include": ["src", "src/**/*", "index.d.ts"],
 }

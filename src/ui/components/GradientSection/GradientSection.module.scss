@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    var(--primaryPurple),
+    var(--secondaryPurple)
+  );
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.centered {
+  align-items: center;
+}

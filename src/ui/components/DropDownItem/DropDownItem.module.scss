@@ -1,0 +1,27 @@
+.item {
+  box-sizing: border-box;
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--darkGrey);
+
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--darkGrey);
+  }
+
+  .selectedLabel {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--darkGrey);
+  }
+}

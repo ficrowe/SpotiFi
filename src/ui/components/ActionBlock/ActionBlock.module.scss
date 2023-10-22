@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 1rem;
+    gap: 2rem;
+    min-height: 10rem;
+}
+
+.actionLabel {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+// %action {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     min-width: 5rem;
+//     max-width: 10rem;
+//     width: 100%;
+//     padding: 0.25rem 1.5rem;
+//     background-color: var(--green1);
+// }
+
+.actionDropdown {
+    padding: 1rem;
+}
+
+.argumentsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+%ioWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1rem;
+}
+
+%io {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0.25rem 0.5rem;
+    min-width: 2rem;
+    height: 3rem;
+
+    box-sizing: border-box;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.inputWrapper {
+    @extend %ioWrapper;
+    align-items: flex-start;
+}
+
+.outputWrapper {
+    @extend %ioWrapper;
+    align-items: flex-end;
+}
+
+.undefinedInput {
+    @extend %io;
+
+    border: 0.25rem solid var(--darkGrey);
+    border-top: none;
+    border-radius: 0rem 0rem 1rem 1rem;
+    color: var(--darkGrey);
+    background-color: var(--primaryWhite);
+
+    &:hover {
+        cursor: pointer;
+        border: 0.25rem solid var(--green1);
+        border-top: none;
+        color: var(--green1);
+    }
+}
+
+.input {
+    @extend %io;
+
+    border: 0.25rem solid var(--green1);
+    border-radius: 0rem 0rem 1rem 1rem;
+    color: var(--darkGrey);
+    background-color: var(--green1);
+
+    &:hover {
+        cursor: pointer;
+        border: 0.25rem solid var(--green1);
+        border-top: none;
+        color: var(--green1);
+        background-color: var(--primaryWhite);
+    }
+}
+
+.output {
+    @extend %io;
+
+    border: 0.25rem solid var(--darkGrey);
+    border-radius: 1rem 1rem 0rem 0rem;
+    color: white;
+    background-color: var(--darkGrey);
+}

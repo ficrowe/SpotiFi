@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green2);
+    padding: 1.5rem 3rem 3rem 3rem;
+    gap: 2rem;
+
+    border-radius: 1rem;
+
+    box-sizing: border-box;
+    color: var(--mediumGrey);
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: "#404040";
+}
+
+.editIcon {
+    color: "#404040";
+
+    *:hover {
+        cursor: pointer;
+    }
+}
+
+.shortcutWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+  }
+
+.shortcutBlockWrapper {
+    width: 20rem;
+    height: 10rem;
+}
+
+
+.shortcutInputVariablesWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkGrey);
+    border: 1rem solid var(--darkGrey);
+    border-radius: var(--BORDER_RADIUS);
+  
+    min-height: 5rem;
+    max-height: 35rem;
+    min-width: 25rem;
+    max-width: 25rem;
+    overflow: scroll;
+  
+    div {
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding: 0.15rem 1rem;
+      color: var(--primaryWhite);
+  
+      &:hover {
+        cursor: pointer;
+        color: var(--green1);
+        font-weight: 600;
+      }
+    }
+  
+    .unselected {
+      color: var(--primaryWhite);
+      font-weight: 400;
+    }
+  
+    .selected {
+      color: var(--green1);
+      font-weight: 700;
+    }
+  }
+  
+.inputTypeWrapper {
+    display: flex;
+    flex-direction: column;
+  }

@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: relative;
+  width: 220px;
+
+  user-select: none;
+
+  .select {
+    display: flex;
+    padding: 0.3rem 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .profileWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
+
+.optionsWrapper {
+  position: absolute;
+  top: 4.7rem;
+
+  width: 100%;
+  box-sizing: inherit;
+  background-color: var(--darkGrey);
+  // border-radius: 0 0 var(--BORDER_RADIUS) var(--BORDER_RADIUS);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menuItem {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primaryWhite);
+}

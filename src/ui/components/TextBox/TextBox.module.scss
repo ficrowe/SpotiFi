@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+
+  .label {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--darkGrey);
+  }
+  .label:focus {
+    color: var(--primaryPurple);
+  }
+
+  .input {
+    border: var(--BORDER_WIDTH) solid var(--primaryPurple);
+    border-radius: 15px;
+    padding: 0.3rem 0.6rem;
+
+    min-height: 10rem;
+
+    resize: vertical;
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--darkGrey);
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  .topRightContent {
+    //align-self: flex-end;
+  }
+}

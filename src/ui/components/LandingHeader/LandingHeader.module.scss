@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  transition: 0.4s;
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      min-width: 4rem;
+      max-width: 10rem;
+      transition: 0.4s;
+    }
+
+    .logoWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+      gap: 1rem;
+    }
+
+    .childrenWrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: flex-end;
+      align-items: center;
+      align-self: flex-start;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.invertedHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 8%;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  //background-color: var(--primaryPurple);
+  background: linear-gradient(
+                  to right,
+                  var(--primaryPurple),
+                  var(--secondaryPurple)
+  );
+  z-index: 1;
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .logoWrapper {
+      max-width: 4rem;
+    }
+
+    .childrenWrapper {
+      display: flex;
+      flex-direction: row;
+      flex: 0.3;
+      gap: 1rem;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
