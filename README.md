@@ -14,3 +14,21 @@ This is a React web application 'SpotiFi' - the interface to create & manage Spo
 [Expo Video](https://youtu.be/89FLSFPgSok)
 
 [Process Video](https://youtu.be/UjFAnWDWEZ0)
+
+
+## Commands
+### Install Dependencies
+`npm install`
+
+### Run Locally
+`npm start`
+
+### Build Application
+`npm build`
+
+### Run Tests
+`npm test`
+
+### Format Code
+`npm format`
+
