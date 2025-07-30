@@ -1,7 +1,6 @@
 import React, { ChangeEvent, InputHTMLAttributes, useState } from "react";
 import styles from "./TextField.module.scss";
 import Link from "../Link/Link";
-import Text from "../Text/Text";
 
 interface ExtraInputProps {
   label: string;

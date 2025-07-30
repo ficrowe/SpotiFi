@@ -1,4 +1,4 @@
-import React, { EventHandler, UIEvent, UIEventHandler, useState } from "react";
+import React from "react";
 import Logo from "../Logo/Logo";
 import styles from "./LandingHeader.module.scss";
 import Button from "../Button/Button";
@@ -35,7 +35,9 @@ export default function LandingHeader(props: { headerScale: HeaderState }) {
               fontSize:
                 props.headerScale === HeaderState.SHORT ? "2.5rem" : "5rem",
             }}
-          >SpotiFi</Title>
+          >
+            SpotiFi
+          </Title>
         </div>
         <div className={styles.childrenWrapper}>
           {

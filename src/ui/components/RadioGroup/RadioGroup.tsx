@@ -5,13 +5,9 @@ import RadioButton, { RadioButtonProps } from "../RadioButton/RadioButton";
 
 interface RadioGroupProps {
   label: string;
-
   layout?: Axis;
-
   options: RadioButtonProps[];
-
   onChangeCallback: (value: string) => void;
-
   selectedOption?: string;
 }
 

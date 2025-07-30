@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, useEffect, useState } from "react";
+import React, { InputHTMLAttributes, useState } from "react";
 import styles from "./DropDownList.module.scss";
 import DropDownItem, { DropDownOption } from "../DropDownItem/DropDownItem";
 import { IoChevronDown } from "react-icons/io5";

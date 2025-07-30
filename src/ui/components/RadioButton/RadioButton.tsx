@@ -3,25 +3,19 @@ import styles from "./RadioButton.module.scss";
 import {
   Axis,
   primaryGrey,
-  primaryPurple,
   secondaryPurple,
 } from "../../../constants/styleConstants";
 import { IconType } from "react-icons";
 
 export interface RadioButtonItem {
   label?: string;
-
   icon?: IconType;
-  // icon?: React.ReactNode;
-
   value: string;
-
   checked: boolean;
 }
 
 export interface RadioButtonProps extends RadioButtonItem {
   layout?: Axis;
-
   onClickCallback?: (value: string) => void;
 }
 
